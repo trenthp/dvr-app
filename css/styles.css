@@ -1,0 +1,6 @@
+.tabs dd.active a {
+	background: #f0f
+
+	-webkit-transition: background .5s;
+	transition: background .5s;
+}
