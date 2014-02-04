@@ -36,6 +36,7 @@
             <aside class="left-off-canvas-menu">
               <ul class="off-canvas-list">
                 <li><label>Where do you want to be?</label></li>
+                <li><a href="#">Power On/Off</a></li>
                 <li><a href="#">Television</a></li>
                 <li><a href="#">DVR</a></li>
                 <li><a href="#">On Demand</a></li>
@@ -50,44 +51,36 @@
                 <li><label>My DVR</label></li>
                 <li><a href="list.html">List</a></li>
                 <li><a href="index.html">Currently Playing</a></li>
-                <li><a href="search.html">Search</a></li>
+                <li><a href="search.html">Search Guide</a></li>
                 ...
               </ul>
             </aside>
 
             <section class="main-section">
+
+
+              <a class="exit-off-canvas"></a>
+                
               <!-- content goes here -->
 
-
-
-                <a class="exit-off-canvas"></a>
-                
-                <!-- Tab Labels -->
-                <dl class="tabs" data-tab>
-                  <dd class="active"><a href="#panel2-1">Controls</a></dd>
-                  <dd><a href="#panel2-2">My List</a></dd>
-                  <dd><a href="#panel2-3"></a></dd>
-                </dl>
-
-                <!-- Tab Content -->
-                <div class="tabs-content">
-                  <div class="content active" id="panel2-1">
-                    <p>
-                      <ul class="button-group [radius round]">
-                        <li><a href="#" class="button [secondary success]">|> Play</a></li>
-                        <li><a href="#" class="button [secondary success]">|| Pause</a></li>
-
-                      </ul>
-                    </p>
+              <form>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <div class="row collapse">
+                      <div class="small-10 columns search">
+                        <input type="text" placeholder="Search guide and list">
+                      </div>
+                      <div class="small-2 columns search">
+                        <a href="#" class="button postfix">Go</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="content" id="panel2-2">
-                    <p>Second panel content goes here...</p>
-                  </div>
-                  <div class="content" id="panel2-3">
-                    <p>Third panel content goes here...</p>
-                  </div>
+                  
                 </div>
+              </form>
 
+
+              <!-- end of content here -->
 
               </div>
             </div><!-- End 1st Row-->

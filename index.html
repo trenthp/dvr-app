@@ -37,6 +37,7 @@
             <aside class="left-off-canvas-menu">
               <ul class="off-canvas-list">
                 <li><label>Where do you want to be?</label></li>
+                <li><a href="#">Power On/Off</a></li>
                 <li><a href="#">Television</a></li>
                 <li><a href="#">DVR</a></li>
                 <li><a href="#">On Demand</a></li>
@@ -44,14 +45,14 @@
                 <li><a href="#">Settings</a></li>
 
               </ul>
-            </aside>
+            </aside>d
 
             <aside class="right-off-canvas-menu">
               <ul class="off-canvas-list">
                 <li><label>My DVR</label></li>
                 <li><a href="list.html">List</a></li>
                 <li><a href="index.html">Currently Playing</a></li>
-                <li><a href="search.html">Search</a></li>
+                <li><a href="search.html">Search Guide</a></li>
                 ...
               </ul>
             </aside>
@@ -65,17 +66,37 @@
               
               <!-- 1st Row-->
               <div class="row">
-                <div class="small-12 columns"></div>
+                <div class="small-12 columns">
                   <div class="pauseimage">
                     <img src="img/ad-cover-pause.png" alt="arrested development playing">
                   </div>
-
-                  <div class="playimage offscreenimg">
-                    <img src="img/ad-cover-play.png" alt="arrested development playing">
-                  </div>
-
+                </div>
               </div> <!-- End 1st Row-->
              
+
+             <!-- 2nd Row-->
+              <div class="row">
+
+                <div class="small-9 columns slide">
+                  <img src="img/play-slide.png">
+                </div>
+                <div class="small-3 columns slide">
+                  <p>1:34</p>
+                </div>
+
+              </div><!-- End 2nd Row-->
+
+
+              <div class="row">
+                <div clas="small-12 columns">
+                  <div class="button-bar">
+                    <ul class="button-group round">
+                      <li><a href="#" class="tiny button secondary">Volume ^</a></li>
+                      <li><a href="#" class="tiny button secondary">Volume v</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
               <!-- content ends here -->
 
@@ -97,12 +118,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).ready(function() {
-        $(".pauseimage").click(function() {
-          $(this).replaceWith( $(".playimage").removeClass(".offscreenimg") );
-        });
-
-      });
+      $(document).foundation();
     </script>
   </body>
 </html>
