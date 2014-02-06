@@ -68,7 +68,7 @@
               <div class="row">
                 <div class="small-12 columns">
                   <div class="pauseimage">
-                    <img src="img/ad-cover-pause.png" alt="arrested development playing">
+                    <img src="img/ad-cover-pause.png" alt="arrested development playing" class="hideimage">
                   </div>
                 </div>
               </div> <!-- End 1st Row-->
@@ -118,7 +118,17 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation(function() {
+
+
+        $('.hideimage').on('click', function () {
+          var play = $("<img src='img/ad-cover-play.png'>");
+          $('.pauseimage').append(play);
+          $('.hideimage').remove();
+        });
+
+
+      });
     </script>
   </body>
 </html>
